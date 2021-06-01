@@ -158,6 +158,17 @@ body {
     justify-content: space-around;
     padding: 2em;
   }
+
+  .show__menu::after {
+    content: " ";
+    position: absolute;
+    right: 42%;
+    bottom: -15px;
+    border-top: 15px solid var(--vd--grayish-blue);
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: none;
+  }
 }
 
 @media only screen and (min-width: 1050px) {
