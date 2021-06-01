@@ -21,7 +21,7 @@ body {
 
 .article__card {
   width: 85%;
-  margin: 5em auto;
+  margin: 15vh auto;
   border-radius: 12px;
   background-color: white;
   overflow: hidden;
@@ -133,7 +133,7 @@ body {
   .article__card {
     display: flex;
     width: 70%;
-    margin: 18em auto;
+    margin: 30vh auto;
     max-height: max-content;
     overflow: visible;
   }
@@ -150,7 +150,7 @@ body {
   }
 
   .show__menu {
-    top: -5.5em;
+    top: -6.5em;
     right: -25%;
     width: 70%;
     gap: 0.2em;
@@ -162,7 +162,7 @@ body {
   .show__menu::after {
     content: " ";
     position: absolute;
-    right: 42%;
+    right: 43.5%;
     bottom: -15px;
     border-top: 15px solid var(--vd--grayish-blue);
     border-right: 15px solid transparent;
