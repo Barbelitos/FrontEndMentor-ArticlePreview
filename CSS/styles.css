@@ -33,6 +33,11 @@ body {
   object-fit: cover;
 }
 
+.content__container {
+  position: relative;
+  padding: 0;
+}
+
 .card__content {
   padding: 1.5em 2.1em;
 }
@@ -57,29 +62,27 @@ body {
   gap: 1em;
   height: 70px;
   position: relative;
-  padding: 1.3em;
-  transition: all 0.5s ease-in-out;
 }
 
 .author__picture {
+  margin-left: 1.2em;
+  margin-top: 1em;
   height: 3em;
   border-radius: 50%;
 }
 
+.author__info {
+  padding-top: 1em;
+}
+
 .show__menu {
   display: flex;
-  width: 80%;
-  padding: 0.5em;
+  height: 100%;
+  padding: 1.8em;
   gap: 1.2em;
-}
-
-.remove {
-  display: none;
-}
-
-.bg__change {
   background-color: var(--vd--grayish-blue);
-  transition: all 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
 }
 
 .button__change {
@@ -93,27 +96,25 @@ body {
 .author__share {
   position: absolute;
   border-radius: 50%;
-  right: 1.2em;
+  right: 1.5em;
+  bottom: 1.5em;
   background: var(--light-grayish-blue);
   border: none;
   cursor: pointer;
-  width: 2.5em;
-  height: 2.5em;
+  width: 2.8em;
+  height: 2.8em;
   padding: 0.6em;
   transition: all 0.5s;
 }
 
 .share__fill {
   fill: white;
+  transition: all 0.5s;
 }
 
 /* SHARE MENU */
 .share__menu {
-  width: 80%;
-  padding: 0.5em;
-  gap: 1.2em;
   display: none;
-  transition: all 0.5s;
 }
 
 .share__text {
@@ -125,4 +126,48 @@ body {
 .share__icons {
   display: flex;
   gap: 1.5em;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 725px) {
+  .article__card {
+    display: flex;
+    width: 70%;
+    margin: 18em auto;
+    max-height: max-content;
+    overflow: visible;
+  }
+
+  .card_picture {
+    height: 100%;
+  }
+
+  .card__picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+  }
+
+  .show__menu {
+    top: -5.5em;
+    right: -25%;
+    width: 70%;
+    gap: 0.2em;
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 2em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .article__card {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .article__card {
+    width: 32%;
+  }
 }
