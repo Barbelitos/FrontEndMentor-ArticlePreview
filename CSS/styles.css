@@ -25,6 +25,7 @@ body {
   border-radius: 12px;
   background-color: white;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .card__picture img {
@@ -54,7 +55,7 @@ body {
   line-height: 1.5em;
   font-size: 12.5px;
   color: var(--desaturated-dark-blue);
-  opacity: 85%;
+  opacity: 75%;
 }
 
 .card__author {
@@ -90,7 +91,8 @@ body {
 }
 
 .article__date {
-  color: var(--desaturated-dark-blue);
+  color: var(--grayish-blue);
+  opacity: 0.7;
 }
 
 .author__share {
@@ -156,7 +158,8 @@ body {
     gap: 0.2em;
     border-radius: 10px;
     justify-content: space-around;
-    padding: 2em;
+    padding: 1.6em;
+    height: 60px;
   }
 
   .show__menu::after {
